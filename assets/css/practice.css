@@ -60,6 +60,11 @@ a {
 /* header 끝 */
 
 /* section 시작 */
+.section-group {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 .section {
   min-height: 100vh;
   display: flex;
@@ -87,38 +92,46 @@ a {
 
 /* swiper 시작 */
 .swiper {
-  width: 1033px;
-  height: 1031px;
+  width: 947px;
+  height: 100vh;
   margin-bottom: 10%;
   margin-left: 110px;
 }
 
 .swiper-slide {
-  width: 1033px;
-  height: 1031px;
+  width: 947px;
+  overflow: hidden;
+  height: calc(100% - 50px);
   background-color: #ae2622;
 }
 
 .slide-2,
 .slide-3,
 .slide-4 {
-  width: 1033px;
-  height: 1031px;
+  width: 947px;
+  height: calc(100% - 50px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .slide-2 {
+  height: 100%;
+
   background-image: url(../img/poster2.png);
+  background-position: top;
 }
 
 .slide-3 {
   background-image: url(../img/tp.png);
+  background-position: top;
+  height: 100%;
 }
 
 .slide-4 {
   background-image: url(../img/rp.png);
+  background-position: top;
+  height: 100%;
 }
 
 .swiper-button-next,
@@ -165,7 +178,7 @@ a {
 
 .parallax__item__sliderWrap {
   width: 1033px;
-  height: 1031px;
+  height: calc(100% - 50px);
   background-color: #ae2622;
   margin: 25px 0;
 }
@@ -336,7 +349,7 @@ a {
 
 .parallax__item__box__1 {
   width: 603px;
-  height: 1031px;
+  height: calc(100% - 50px);
   margin: 25px 34px;
   background-position: center;
   background-repeat: no-repeat;
@@ -345,7 +358,7 @@ a {
 
 .parallax__item__box__2 {
   width: 603px;
-  height: 1031px;
+  height: calc(100% - 50px);
   margin: 25px 0;
   background-position: center;
   background-repeat: no-repeat;
@@ -355,7 +368,7 @@ a {
 .parallax__item__box__3,
 .parallax__item__box__4 {
   width: 603px;
-  height: 1031px;
+  height: calc(100% - 50px);
   margin: 25px 34px;
   background-position: center;
   background-repeat: no-repeat;
@@ -371,26 +384,36 @@ a {
 }
 
 /* section--17 */
+
+.section--16 {
+  width: 50vw !important;
+}
 .section--17 {
-  margin-left: -9.5%;
+  width: 113vw !important;
+  margin-right: 500px;
 }
 /* section--17 끝 */
 
 /* section18 */
+
+/* 
 .section-group--horizontal-left > .section--18 {
   width: 610px;
   height: 1080px;
-  border: 1px solid red;
 }
 .section--18 {
-  /* align-items: start;
+  align-items: start;
   padding-top: 60px;
   margin-left: 34px;
-   */
 }
 .section--18 img:first-child {
   display: inline-block;
   padding-bottom: 100px;
+}
+*/
+
+.parallax__item__box__5 {
+  width: 400px;
 }
 /* section18 끝 */
 
@@ -460,3 +483,4 @@ a {
 /* cursor 끝 */
 /* section 끝 */
 /* custom 끝 */
+
