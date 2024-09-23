@@ -77,6 +77,11 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
+      </section>
+      <!-- //section section--16 -->
+
+      <!-- section section--17 -->
+      <section class="section section--17">
         <div class="parallax__item__box">
           <div class="parallax__item__box__1">
             <div class="parallax__item__box__cont">
@@ -103,13 +108,6 @@
               </a>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- //section section--16 -->
-
-      <!-- section section--17 -->
-      <section class="section section--17">
-        <div class="parallax__item__box">
           <div class="parallax__item__box__2">
             <div class="parallax__item__box__cont">
               <p class="cont">
@@ -182,25 +180,29 @@
               </svg>
             </div>
           </div>
+          <div class="parallax__item__box__5">
+            <div class="parallax__item__box__cont">
+              <div class="bi"><img src="assets/img/bi.png" alt="bi" /></div>
+              <div class="bv animate__animated animate__fadeInUp">
+                <img src="assets/img/bv.png" alt="bv" />
+              </div>
+              <div
+                class="bm animate__animated animate__fadeInUp animate__delay-1s"
+              >
+                <img src="assets/img/bm.png" alt="bm" />
+              </div>
+              <div
+                class="bp animate__animated animate__fadeInUp animate__delay-2s"
+              >
+                <img src="assets/img/bp.png" alt="bp" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- //section section--17 -->
 
       <!-- section section--18 -->
-      <section class="section section--18">
-        <div class="parallax__item__box__5">
-          <div class="bi"><img src="assets/img/bi.png" alt="bi" /></div>
-          <div class="bv animate__animated animate__fadeInUp">
-            <img src="assets/img/bv.png" alt="bv" />
-          </div>
-          <div class="bm animate__animated animate__fadeInUp animate__delay-1s">
-            <img src="assets/img/bm.png" alt="bm" />
-          </div>
-          <div class="bp animate__animated animate__fadeInUp animate__delay-2s">
-            <img src="assets/img/bp.png" alt="bp" />
-          </div>
-        </div>
-      </section>
       <!-- //section section--18 -->
     </section>
     <!-- //section-group section-group--4 section-group--horizontal-left -->
@@ -242,25 +244,6 @@
               scrub: true,
               markers: false,
             },
-          });
-        });
-        $(".section-group--stack-up").each(function (index, node) {
-          var $group = $(node);
-          var $section = $group.find(" > .section:not(:first-child)");
-          $section.each(function (index, node) {
-            var $sectionOne = $(node);
-            gsap.to($section, {
-              ease: "none",
-              scrollTrigger: {
-                trigger: $sectionOne,
-                start: "top 100%",
-                end: "bottom 100%",
-                pin: $sectionOne.prev(),
-                pinSpacing: false,
-                scrub: true,
-                markers: true,
-              },
-            });
           });
         });
       }
